@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="py.fpuna.electiva1.android.androidlawyersapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".lawyers.LawyersActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".lawyerdetail.LawyerDetailActivity"
+            android:label="@string/title_activity_lawyer_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".addeditlawyer.AddEditLawyerActivity"
+            android:label="@string/title_activity_add_edit"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="658bf184d2eb61f1afecd50d6d5f6f8b637bfaed"
+            />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
